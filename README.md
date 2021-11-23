@@ -33,7 +33,7 @@ Exec Flags: {file}:{line}:{col}
 ```
 
 
-### Pycharm
+### PyCharm
 ```
 Exec Path: c:\Program Files\JetBrains\PyCharm 2021.2\bin\pycharm64.exe
 Exec Flags: --line {line} --column {col} {file}
