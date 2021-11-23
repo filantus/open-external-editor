@@ -26,6 +26,21 @@ You can optionally change the keyboard shortcut (Ctrl+ E by default) by editing 
 # `Exec Path` and `Exec Flags` examples
 
 
+### Sublime Text (Windows)
+```
+Exec Path: C:\Program Files\Sublime Text 3\sublime_text.exe
+Exec Flags: {file}:{line}:{col}
+```
+
+
+### Pycharm
+```
+Exec Path: c:\Program Files\JetBrains\PyCharm 2021.2\bin\pycharm64.exe
+Exec Flags: --line {line} --column {col} {file}
+```
+
+--line {line} --column {col} {file}
+
 ### gVim
 ```
 Exec Path:  gvim
@@ -42,12 +57,6 @@ Exec Flags: -e vim "+normal {line}G{col}|" {file}
 ```
 Exec Path: emacs
 Exec Flags: +{line}:{col} {file}
-```
-
-### Sublime Text (Windows)
-```
-Exec Path: C:\Program Files\Sublime Text 3\sublime_text
-Exec Flags: {file}:{line}:{col}
 ```
 
 # License
