@@ -82,6 +82,7 @@ func open_external_editor():
     if args == null:
         return
     OS.execute(exec_path, args, false)
+    OS.set_window_minimized(true)
 
 # This feels super hacky but whatever ¯\_(ツ)_/¯
 func get_text_edit():
@@ -99,9 +100,9 @@ func get_text_edit():
             if godot_version["minor"] == 0:
                 return editor.get_child(1)
             else:
-                for child in editor.get_child(0).get_children():
-                    if child.name == "TextEdit":
-                        return child
+                for editor_child in editor.get_child(0).get_children():
+                    if editor_child.name == "TextEdit":
+                        return editor_child
         i += 1
 
 func parse_exec_flags(flags):
